@@ -16,6 +16,7 @@ html {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  /* background-color: #fff; */
   position: relative;
 
   /* padding-top: 126px; */
@@ -46,9 +47,9 @@ ol {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+  margin-left: 30px;
   display: flex;
   gap: 30px;
-
   align-items: flex-end;
   width: 1140px;
   height: 534px;
