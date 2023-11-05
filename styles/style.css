@@ -40,7 +40,7 @@ ol {
 .content {
   display: flex;
   gap: 30px;
-  margin: 133px auto;
+  margin: 133px auto 0;
   align-items: flex-end;
   width: 1140px;
   height: 534px;
@@ -71,7 +71,7 @@ ol {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 30px;
+  /* gap: 30px; */
   max-height: 298px;
   max-width: 399px;
   overflow-y: auto;
@@ -80,6 +80,11 @@ ol {
 
 .content__list-item {
   min-width: 399px;
+  margin-bottom: 25px;
+}
+
+.content__list-item:last-child {
+  margin-bottom: 0;
 }
 
 .content__card-link {
@@ -91,6 +96,11 @@ ol {
 
 .content__card-link_current {
   background: #545050;
+}
+
+.content__video-card-description-container {
+  height: 100%;
+  /* width: 100%; */
 }
 
 .content__card-link:hover .content__video-card-description-container {
@@ -122,11 +132,6 @@ ol {
   height: 103px;
 }
 
-.content__video-card-description-container {
-  height: 100%;
-  width: 100%;
-}
-
 .content__video-card {
   display: flex;
   flex-direction: row;
@@ -134,6 +139,7 @@ ol {
 }
 
 .content__video-card-title {
+  padding-bottom: 6px;
   font-family: Oswald, sans-serif;
   font-size: 30px;
   font-weight: 700;
@@ -297,15 +303,15 @@ input[type="checkbox"]:checked + span {
   height: 19px;
 }
 
-.error__title {
+/* .error__title {
   color: #fff;
 
   text-align: center;
   font-family: Oswald, sans-serif;
-  font-size: 30px;
+  font-size: 10px;
   font-style: normal;
   font-weight: 400;
   line-height: 110%;
   text-transform: uppercase;
-  /* letter-spacing: 10; */
-}
+  letter-spacing: 10;
+} */
